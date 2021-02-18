@@ -36,6 +36,22 @@
     });
     </script>
 
+<h3> 2 - The lowercase filter format strings to lower case: </h3>
+
+<div ng-app="myApp" ng-controller="personCtrl">
+
+<p>The name is {{ lastName | lowercase }}</p>
+    
+</div>
+
+<script>
+angular.module('myApp', []).controller('personCtrl', function($scope) {
+    $scope.firstName = "John",
+    $scope.lastName = "PUPU"
+});
+</script>
+
+
     
 </body>
 </html>
