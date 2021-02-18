@@ -22,7 +22,20 @@
         <li>uppercase - Format a string to upper case.</li>
     </ul>
 
+    <h3> 1 - Adding Filters to Expressions with | symbol</h3>
     
+    <div ng-app="myApp" ng-controller="personCtrl">
+
+    <p>The name is {{ lastName | uppercase }}</p>
+        
+    </div>
+    <script>
+    angular.module('myApp', []).controller('personCtrl', function($scope) {
+        $scope.firstName = "John",
+        $scope.lastName = "Doe"
+    });
+    </script>
+
     
 </body>
 </html>
